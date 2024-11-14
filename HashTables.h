@@ -10,6 +10,7 @@ class table1{
         bool contains (int num);
         double getLoad();
     private:
+        int hashFunc(int num, int idx);
         const int P = 2147483647;
         int tableSize;
         int functionCount;
@@ -26,10 +27,11 @@ class table2{
         bool contains (int num);
         double getLoad();
     private:
+        int hashFunc(int num, int idx);
         int tableSize;
         int functionCount;
         bool* table;
-        int* s;
+        int* seeds;
 };
 
 #endif
