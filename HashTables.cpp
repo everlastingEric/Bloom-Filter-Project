@@ -68,9 +68,11 @@ table2::table2(int m, int k) {
     functionCount = k;
     table = new bool[m]{false};
 
+    int seed = std::chrono::system_clock::now().time_since_epoch().count();
+    mt19937 r(seed);
     seeds = new int[k];
     for (int i = 0; i < k; i++) {
-        seeds[i] = std::chrono::system_clock::now().time_since_epoch().count();
+        seeds[i] = r();
     }
 }
 
