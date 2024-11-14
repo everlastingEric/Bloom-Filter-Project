@@ -46,8 +46,8 @@ int main() {
     }
     cout << t1Sum / 10 << " " << t2Sum / 10 << endl;
 
-    double t1Sum = 0;
-    double t2Sum = 0;
+    t1Sum = 0;
+    t2Sum = 0;
     for (int i = 0; i < 10; i++) {
         table1 t1(500, 1);
         table2 t2(500, 1);
