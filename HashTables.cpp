@@ -12,8 +12,8 @@ table1::table1(int m, int k) {
     
     aArr = new int[k];
     bArr = new int[k];
-    uniform_int_distribution<> aRange(0, P - 1);
-    uniform_int_distribution<> bRange(1, P - 1);
+    uniform_int_distribution<> aRange(1, P - 1);
+    uniform_int_distribution<> bRange(0 P - 1);
     const int seed = std::chrono::system_clock::now().time_since_epoch().count();
     mt19937 rand(seed);
     for (int i = 0; i < k; i++) {
